@@ -12,7 +12,7 @@ Before you can use Jekyll to test a site, you must:
 
 ### Building your site locally
 Open Your Jeykll Project
-Navigate to the publishing source for your site. (AKA YOUR REPSORITY FOR THE SITE)
+Navigate to the publishing source for your site. (AKA YOUR **GITHUB** REPSORITY FOR THE SITE)
 and open up a code workflow in `actions` and open the `commandline`, more info on that [here]()
 - Run bundle install.
 - Run your Jekyll site locally.
