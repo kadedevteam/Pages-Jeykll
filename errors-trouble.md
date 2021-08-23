@@ -68,44 +68,6 @@ To troubleshoot, make sure that your `_config.yml` file follows these rules:
 
 To identify any errors, you can copy and paste the contents of your YAML file into a YAML linter, such as `YAML Validator.`
 
-### Date is not a valid datetime
-This error means that one of the pages on your site includes an invalid datetime.
-
-To troubleshoot, search the file in the error message and the file's layouts for calls to any date-related Liquid filters. Make sure that any variables passed into date-related Liquid filters have values in all cases and never pass nil or "".
-
-### File does not exist in includes directory
-This error means that your code references a file that doesn't exist in your _includes directory.
-
-To troubleshoot, search the file in the error message for include to see where you've referenced other files, such as `{% include example_header.html %}`. If any of the files you've referenced aren't in the `_includes directory`, copy or move the files into the `_includes directory.`
-
-### File is a symlink
-This error means that your code references a symlinked file that does not exist in the publishing source for your site.
-
-To troubleshoot, search the file in the error message for include to see where you've referenced other files, such as `{% include example_header.html %}.` If any of the files you've referenced are symlinked, copy or move the files into the `_includes directory.`
-
-This error means that you used non-Latin characters, like 日本語, without telling the computer to expect these symbols.
-
-To troubleshoot, force UTF-8 encoding by adding the following line to your `_config.yml` file:
-```
-encoding: UTF-8
-```
-
-### Invalid highlighter language
-This error means that you specified any syntax highlighter other than Rouge or Pygments in your configuration file.
-
-To troubleshoot, update your `_config.yml` file to specify `Rouge` or `Pygments.` For more information!
-
-### Invalid post date
-This error means that a post on your site contains an invalid date in the filename or `YAML` front matter.
-
-To troubleshoot, make sure all dates are formatted as `YYYY-MM-DD HH:MM:SS` for UTC and are actual calendar dates. To specify a time zone with an offset from UTC, use the format `YYYY-MM-DD HH:MM:SS +/-TTTT`, like `2014-04-18 11:30:00 +0800.`
-
-If you specify a date format in your `_config.yml file`, make sure the format is correct.
-
-### Invalid Sass or SCSS
-This error means your repository contains a Sass or SCSS file with invalid content.
-
-To troubleshoot, review the line number included in the error message for invalid Sass or SCSS. To help prevent future errors, install a Sass or SCSS linter for your favorite text editor.
 
 ### Invalid submodule
 This error means that your repository includes a submodule that hasn't been properly initialized.
