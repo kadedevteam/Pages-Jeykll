@@ -2,7 +2,8 @@
 ### Jeykll is a site engine! Check it out [here!](https://jekyllrb.com/)
 
 ```
-NOTE: Github Pages Pro and Jeykll are in a team orginazation! for thoose who thinking we are using jeykll without permisson! you can read more at the offical jeykll "team" page
+NOTE: Github Pages Pro and Jeykll are in a team orginazation! for thoose who thinking we are using jeykll without permisson! 
+you can read more at the offical jeykll "team" page
 ```
 
 ### About Jekyll
