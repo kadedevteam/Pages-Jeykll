@@ -12,11 +12,11 @@ Jekyll is not officially supported for Windows. For more information, see "Jekyl
 
 We recommend using Jekyll with GitHub Pages. If you prefer, you can use other static site generators or customize your own build process locally or on another server.
 
-Configuring Jekyll in your GitHub Pages site
-You can configure most Jekyll settings, such as your site's theme and plugins, by editing your _config.yml file. For more information, see "Configuration" in the Jekyll documentation.
+### Configuring Jekyll in your GitHub Pages site
+You can configure most Jekyll settings, such as your site's `theme` and `plugins`, by editing your `_config.yml` file. For more information, see `"Configuration"` in the Jekyll documentation.
 
 Some configuration settings cannot be changed for GitHub Pages sites.
-
+```
 lsi: false
 safe: true
 source: [your repo's top level directory]
@@ -27,10 +27,18 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+```
 By default, Jekyll doesn't build files or folders that:
 
-are located in a folder called /node_modules or /vendor
-start with _, ., or #
-end with ~
-are excluded by the exclude setting in your configuration file
-If you want Jekyll to process any of these files, you can use the include setting in your configuration file.
+are located in a folder called` /node_modules` or `/vendor`
+start with `_,` `.,` or` #`
+end with `~`
+are excluded by the exclude setting in your `configuration file`
+If you want Jekyll to process any of these files, you can use the `include` setting in your `configuration file.`
+
+### Front matter
+To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.
+
+You can add site.github to a post or page to add any repository references metadata to your site. For more information, see "Using site.github" in the Jekyll Metadata documentation.
+
+### Find More Docomentations [Here](https://kadedevteam.github.io/Documentations/)
